@@ -10,6 +10,7 @@ import UserLikerIdSettingPage from './pages/UserLikerIdSettingPage';
 import SiteLikerIdSettingPage from './pages/SiteLikerIdSettingPage';
 import SponsorLikecoinPage from './pages/SponsorLikecoinPage';
 import LikeCoinHelpPage from './pages/LikeCoinHelpPage';
+import LikeCoinProPage from './pages/LikeCoinProPage';
 
 function App() {
   const {
@@ -32,6 +33,7 @@ function App() {
           <Route path="user" element={<UserLikerIdSettingPage />} />
         </Route>
         <Route path="help" element={<LikeCoinHelpPage />} />
+        <Route path="pro" element={<LikeCoinProPage />} />
       </Routes>
     </div>
   );

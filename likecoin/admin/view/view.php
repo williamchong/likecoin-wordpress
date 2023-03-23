@@ -78,6 +78,17 @@ function likecoin_display_admin_pages() {
 		'likecoin_show_likecoin_admin_main_page_content'
 	);
 	add_action( 'load-' . $likecoin_help_page, 'likecoin_load_menu_admin_js' );
+
+	global $likecoin_pro_page;
+	$likecoin_pro_page = add_submenu_page(
+		'likecoin',
+		__( 'Web3Press', 'likecoin' ),
+		__( 'WebPress Pro', 'likecoin' ),
+		'edit_posts',
+		'likecoin_pro',
+		'likecoin_show_likecoin_admin_main_page_content'
+	);
+	add_action( 'load-' . $likecoin_pro_page, 'likecoin_load_menu_admin_js' );
 }
 /**
  * Show default UI for admin main page.
